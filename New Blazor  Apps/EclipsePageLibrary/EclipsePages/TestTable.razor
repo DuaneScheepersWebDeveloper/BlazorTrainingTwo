@@ -1,0 +1,143 @@
+﻿@page "/testTable"
+@using EclipseWebAppClassLibrary.Data.Interfaces
+@using System.Collections.Generic
+@using Radzen
+@using EclipsePageLibrary.CustomComponents
+@rendermode InteractiveServer
+
+<h1>Employee Example</h1>
+<RadzenEditableReusableGrid GridName="Employee list Template"
+                            AddButtonText="Add a employee"
+                            Items="@employees"
+                            AllowPaging="true"
+                            PageSize="5" AllowSorting="true"
+                            EditMode="DataGridEditMode.Single"
+                            AllowGrouping="true"
+                            AllowColumnResize="true">
+    <ChildContent>
+        <RadzenDataGridColumn TItem="Employee" Property="EmployeeID" Title="ID" Width="50px">
+            <Template>
+                <span>@context.EmployeeID</span>
+            </Template>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="FirstName" Title="First Name" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.FirstName" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="LastName" Title="Last Name" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.LastName" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Title" Title="Job Title" Width="200px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Title" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="TitleOfCourtesy" Title="Title" Width="80px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.TitleOfCourtesy" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="BirthDate" Title="Birth date" Width="160px">
+            <Template>
+                @String.Format("{0:dd.MM.yyyy}", context.BirthDate)
+            </Template>
+            <EditTemplate>
+                <RadzenStack>
+                    <RadzenDatePicker @bind-Value="context.BirthDate" DateFormat="dd.MM.yyyy" ShowTime="false" />
+                </RadzenStack>
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+
+        <RadzenDataGridColumn TItem="Employee" Property="HireDate" Title="Hire date" Width="160px">
+            <Template>
+                @String.Format("{0:dd.MM.yyyy}", context.HireDate)
+            </Template>
+            <EditTemplate>
+                <RadzenDatePicker @bind-Value="context.HireDate" DateFormat="dd.MM.yyyy" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Address" Title="Address" Width="200px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Address" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        @*<RadzenDataGridColumn TItem="Employee" Property="City" Title="City" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.City" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Region" Title="Region" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Region" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="PostalCode" Title="Postal Code" Width="120px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.PostalCode" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Country" Title="Country" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Country" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="HomePhone" Title="Home Phone" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.HomePhone" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Extension" Title="Extension" Width="160px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Extension" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Employee" Property="Notes" Title="Notes" Width="200px">
+            <EditTemplate>
+                <RadzenTextBox @bind-Value="context.Notes" Style="width:100%" />
+            </EditTemplate>
+        </RadzenDataGridColumn>*@
+
+
+    </ChildContent>
+</RadzenEditableReusableGrid>
+
+@code {
+    List<Employee> employees;
+
+    [Inject] IEmployeeData employeeData { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await base.OnInitializedAsync();
+            if (employeeData != null)
+            {
+                employees = employeeData.GetEmployees() ?? new List<Employee>();
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle the exception (e.g., log it or show an error message)
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
+    }
+
+}

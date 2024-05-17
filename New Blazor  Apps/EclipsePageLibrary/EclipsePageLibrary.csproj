@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <SupportedPlatform Include="browser"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.5.0"/>
+        <PackageReference Include="ClosedXML" Version="0.104.0-preview2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Blazor.Bootstrap" Version="2.1.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.3"/>
+        <PackageReference Include="Radzen.Blazor" Version="4.28.3"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Folder Include="wwwroot\Images\"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <ProjectReference Include="..\EclipseWebAppClassLibrary\EclipseWebAppClassLibrary.csproj"/>
+    </ItemGroup>
+
+</Project>

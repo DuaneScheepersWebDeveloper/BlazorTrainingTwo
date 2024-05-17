@@ -1,0 +1,5 @@
+D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\obj\Release\net8.0\EclipsePageLibrary.csproj.AssemblyReference.cache
+D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\obj\Release\net8.0\EclipsePageLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\obj\Release\net8.0\EclipsePageLibrary.AssemblyInfoInputs.cache
+D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\obj\Release\net8.0\EclipsePageLibrary.AssemblyInfo.cs
+D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\obj\Release\net8.0\EclipsePageLibrary.csproj.CoreCompileInputs.cache

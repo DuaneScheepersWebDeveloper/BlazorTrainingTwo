@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dfzoy6b5VJRTOUkWwD8jmmEaVYbeVakgPCOd4r9ruKLklWNHUBx64mKfVQGjSk0VbNKob8VgRwnBXhiqTCjkmw==",
+  "success": true,
+  "projectFilePath": "D:\\practice\\New Blazor Eclipse Apps\\EclipseWebAppClassLibrary\\EclipseWebAppClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dev00\\.nuget\\packages\\bogus\\35.5.0\\bogus.35.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

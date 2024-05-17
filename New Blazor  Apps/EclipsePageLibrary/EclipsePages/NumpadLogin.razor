@@ -1,0 +1,70 @@
+﻿@page "/numPadLogin"
+
+<style>
+    .login-page-text-creditionals-display input {
+        margin: 5px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        width: 2.7rem;
+        height: 2.7rem;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        justify-content: center;
+        align-items: center;
+        background-color: #044180;
+        color: white;
+    }
+</style>
+<div class="d-flex justify-content-center align-items-center p-8 login-background  text-center " style="background-image: url('images/Truck1.jpg');">
+
+    <div class="m-2 p-3 shadow w-2/3 eclipse-login-card rounded-lg">
+        <div class="text-center d-flex flex-column align-items-center">
+            <img src="images/eclipseheader.jpg" alt="Header Image" class="header-image text-center eclipse-heading"/>
+        </div>
+
+
+        <div class="text-center d-flex flex-column align-items-center">
+            <div class="m-1 ">
+
+                <div class="d-flex justify-content-center align-items-center m-1 mt-3">
+                    @*<input type="text" class="form-control" id="username" placeholder="Username" />*@
+                    <span class="text-eclipse">DUANE</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="col-span-1 login-page-text-creditionals-display">
+                    <div class="pin-container">
+                        @* Displaying the password input as pin digits -Duane *@
+                        <input type="password" class="pin-digit" readonly/>
+                        <input type="password" class="pin-digit" readonly/>
+                        <input type="password" class="pin-digit" readonly/>
+                        <input type="password" class="pin-digit" readonly/>
+                        <input type="password" class="pin-digit" readonly/>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" m-1">
+                <CustomEclipseNumpad/>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center align-items-center m-1 text-center">
+            <button class="btn-primary p-2 rounded">
+                Login
+            </button>
+        </div>
+
+        <div class="text-center m-2 p-2">
+            <a class="forget-password">
+                <span>Forgot Password?</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>

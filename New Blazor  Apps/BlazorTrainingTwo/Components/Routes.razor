@@ -1,0 +1,36 @@
+﻿@using System.Reflection
+@using BlazorTrainingTwo.Components.Layout
+@inherits LayoutComponentBase
+
+<Router AppAssembly="typeof(Program).Assembly"
+        AdditionalAssemblies="@GetAdditionalAssemblies()">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="typeof(MainLayout)"/>
+    </Found>
+    <NotFound>
+        <!-- Handle fallback routes here -->
+        <LayoutView Layout="typeof(MainLayout)">
+            <p>Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+
+@code {
+
+    private IEnumerable<Assembly> GetAdditionalAssemblies()
+    {
+        var assemblies = new List<Assembly>();
+
+        // Load all assemblies from the EclipsePageLibrary project
+        var libraryPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        var libraryFiles = Directory.GetFiles(libraryPath, "EclipsePageLibrary*.dll", SearchOption.TopDirectoryOnly);
+        foreach (var libraryFile in libraryFiles)
+        {
+            var assembly = Assembly.LoadFrom(libraryFile);
+            assemblies.Add(assembly);
+        }
+
+        return assemblies;
+    }
+
+}

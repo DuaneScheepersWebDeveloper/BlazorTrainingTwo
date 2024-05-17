@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = EclipsePageLibrary
+build_property.RootNamespace = EclipsePageLibrary
+build_property.ProjectDir = D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\etc\New Blazor Eclipse Apps\EclipsePageLibrary
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/CustomComponents/CustomEclipseAccordion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tQ29tcG9uZW50c1xDdXN0b21FY2xpcHNlQWNjb3JkaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/CustomComponents/CustomEclipseNumpad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tQ29tcG9uZW50c1xDdXN0b21FY2xpcHNlTnVtcGFkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/CustomComponents/DynamicTableComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tQ29tcG9uZW50c1xEeW5hbWljVGFibGVDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/CustomComponents/RadzenReusableGridViewOnly.razor]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tQ29tcG9uZW50c1xSYWR6ZW5SZXVzYWJsZUdyaWRWaWV3T25seS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXERhc2hib2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Dashboard2.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXERhc2hib2FyZDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXEVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/HomePlay.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXEhvbWVQbGF5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/MainLayoutNew.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXE1haW5MYXlvdXROZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/NumpadLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXE51bXBhZExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/ReusableTableComponentTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXFJldXNhYmxlVGFibGVDb21wb25lbnRUZW1wbGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/EclipsePages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = RWNsaXBzZVBhZ2VzXFdlYXRoZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/etc/New Blazor Eclipse Apps/EclipsePageLibrary/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

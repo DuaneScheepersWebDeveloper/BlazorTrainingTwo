@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D354514-D7C9-4EBD-BB19-39D655D08245}|..\\EclipsePageLibrary\\EclipsePageLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsepagelibrary\\eclipsepages\\testtable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D354514-D7C9-4EBD-BB19-39D655D08245}|..\\EclipsePageLibrary\\EclipsePageLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsepagelibrary\\customcomponents\\radzeneditablereusablegrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D354514-D7C9-4EBD-BB19-39D655D08245}|..\\EclipsePageLibrary\\EclipsePageLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsepagelibrary\\eclipsepages\\reusabletablecomponenttemplate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|solutionrelative:tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\css\\tailwind-app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|solutionrelative:wwwroot\\css\\tailwind-app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\styles\\tailwind-app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|solutionrelative:styles\\tailwind-app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8A9E9938-0168-40F5-AE74-28B0742A3E0B}|BlazorTrainingTwo.csproj|solutionrelative:wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D354514-D7C9-4EBD-BB19-39D655D08245}|..\\EclipsePageLibrary\\EclipsePageLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsepagelibrary\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D354514-D7C9-4EBD-BB19-39D655D08245}|..\\EclipsePageLibrary\\EclipsePageLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsepagelibrary\\wwwroot\\examplejsinterop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{676955FB-6D10-400C-8E7F-F52CEAE3783B}|..\\EclipseWebAppClassLibrary\\EclipseWebAppClassLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsewebappclasslibrary\\data\\interfaces\\iemployeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{676955FB-6D10-400C-8E7F-F52CEAE3783B}|..\\EclipseWebAppClassLibrary\\EclipseWebAppClassLibrary.csproj|d:\\practice\\new blazor eclipse apps\\eclipsewebappclasslibrary\\data\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 543,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tailwind.config.js",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\tailwind.config.js",
+              "RelativeDocumentMoniker": "tailwind.config.js",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\tailwind.config.js",
+              "RelativeToolTip": "tailwind.config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-14T07:16:54.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "tailwind-app.css",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\css\\tailwind-app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\tailwind-app.css",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\css\\tailwind-app.css",
+              "RelativeToolTip": "wwwroot\\css\\tailwind-app.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-14T07:16:45.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReusableTableComponentTemplate.razor",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\EclipsePages\\ReusableTableComponentTemplate.razor",
+              "RelativeDocumentMoniker": "..\\EclipsePageLibrary\\EclipsePages\\ReusableTableComponentTemplate.razor",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\EclipsePages\\ReusableTableComponentTemplate.razor",
+              "RelativeToolTip": "..\\EclipsePageLibrary\\EclipsePages\\ReusableTableComponentTemplate.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T05:55:51.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RadzenEditableReusableGrid.razor",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\CustomComponents\\RadzenEditableReusableGrid.razor",
+              "RelativeDocumentMoniker": "..\\EclipsePageLibrary\\CustomComponents\\RadzenEditableReusableGrid.razor",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\CustomComponents\\RadzenEditableReusableGrid.razor",
+              "RelativeToolTip": "..\\EclipsePageLibrary\\CustomComponents\\RadzenEditableReusableGrid.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T07:29:16.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "tailwind-app.css",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\Styles\\tailwind-app.css",
+              "RelativeDocumentMoniker": "Styles\\tailwind-app.css",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\Styles\\tailwind-app.css",
+              "RelativeToolTip": "Styles\\tailwind-app.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-14T07:16:39.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "scripts.js",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\js\\scripts.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\scripts.js",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\BlazorTrainingTwo\\wwwroot\\js\\scripts.js",
+              "RelativeToolTip": "wwwroot\\js\\scripts.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T13:17:30.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\_Imports.razor",
+              "RelativeDocumentMoniker": "..\\EclipsePageLibrary\\_Imports.razor",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\_Imports.razor",
+              "RelativeToolTip": "..\\EclipsePageLibrary\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T14:03:26.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "exampleJsInterop.js",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\wwwroot\\exampleJsInterop.js",
+              "RelativeDocumentMoniker": "..\\EclipsePageLibrary\\wwwroot\\exampleJsInterop.js",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\wwwroot\\exampleJsInterop.js",
+              "RelativeToolTip": "..\\EclipsePageLibrary\\wwwroot\\exampleJsInterop.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T13:17:22.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEmployeeData.cs",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipseWebAppClassLibrary\\Data\\Interfaces\\IEmployeeData.cs",
+              "RelativeDocumentMoniker": "..\\EclipseWebAppClassLibrary\\Data\\Interfaces\\IEmployeeData.cs",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipseWebAppClassLibrary\\Data\\Interfaces\\IEmployeeData.cs",
+              "RelativeToolTip": "..\\EclipseWebAppClassLibrary\\Data\\Interfaces\\IEmployeeData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T09:45:28.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipseWebAppClassLibrary\\Data\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\EclipseWebAppClassLibrary\\Data\\Models\\Employee.cs",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipseWebAppClassLibrary\\Data\\Models\\Employee.cs",
+              "RelativeToolTip": "..\\EclipseWebAppClassLibrary\\Data\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T09:45:22.553Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 543,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestTable.razor",
+              "DocumentMoniker": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\EclipsePages\\TestTable.razor",
+              "RelativeDocumentMoniker": "..\\EclipsePageLibrary\\EclipsePages\\TestTable.razor",
+              "ToolTip": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\EclipsePages\\TestTable.razor",
+              "RelativeToolTip": "..\\EclipsePageLibrary\\EclipsePages\\TestTable.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T08:02:27.413Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

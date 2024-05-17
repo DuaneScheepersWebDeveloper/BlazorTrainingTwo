@@ -1,0 +1,104 @@
+﻿@page "/reusableTableTemplate";
+
+<h1>Reusable Table Template</h1>
+<div class="row">
+    <div class="row">
+
+        @if (AnalyticsList != null)
+        {
+            <h3>Analytics</h3>
+            <DynamicTableComponent GridName="TestTable 1" Items=AnalyticsList>
+                <Header>
+                    <th scope="col">Subsribed</th>
+                    <th scope="col">Hours Watched</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Is Female</th>
+                </Header>
+                <Row>
+                    <td>
+                        @if (context.IsSubscribed)
+                        {
+                            <p>YES</p>
+                        }
+                        else
+                        {
+                            <p>NO</p>
+                        }
+                    </td>
+                    <td>context.WatchTimeHours</td>
+                    <td>context.UserName</td>
+                    <td>context.UserEmail</td>
+                    <td>
+                        @if (context.IsFemale)
+                        {
+                            <p>YES</p>
+                        }
+                        else
+                        {
+                            <p>NO</p>
+                        }
+                    </td>
+                </Row>
+
+            </DynamicTableComponent>
+
+
+            <DynamicTableComponent GridName="Test Table 2" Items=CarList>
+                <Header>
+                    <th scope="col">VIN</th>
+                    <th scope="col">Make</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Model</th>
+
+                </Header>
+                <Row>
+                    <td>@context.VinNumber</td>
+                    <td>@context.Make</td>
+                    <td>@context.Model</td>
+                    <td>@context.Price</td>
+                </Row>
+
+            </DynamicTableComponent>
+
+
+            @*<table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Subsribed</th>
+                        <th scope="col">Hours Watched</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Is Female</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var analytic in AnalyticsList)
+                    {
+                        <tr>
+                            <td>
+                                @if (analytic.IsSubscribed)
+                                {<p>YES</p>}
+                                else
+                                {<p>NO</p>}
+                            </td>
+                            <td>@analytic.WatchTimeHours</td>
+                            <td>@analytic.UserName</td>
+                            <td>@analytic.UserEmail</td>
+                            <td>
+                                @if (analytic.IsFemale)
+                                {<p>YES</p> }
+                                else
+                                {<p>NO</p>}
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+                
+                *@
+        }
+
+
+    </div>
+</div>

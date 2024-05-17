@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "D:\\practice\\New Blazor Eclipse Apps\\EclipsePageLibrary\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EclipsePageLibrary.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EclipsePageLibrary.props",
+      "PackagePath": "build\\EclipsePageLibrary.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EclipsePageLibrary.props",
+      "PackagePath": "buildMultiTargeting\\EclipsePageLibrary.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EclipsePageLibrary.props",
+      "PackagePath": "buildTransitive\\EclipsePageLibrary.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

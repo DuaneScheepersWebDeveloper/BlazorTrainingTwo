@@ -1,0 +1,64 @@
+﻿@page "/radzenTablePage"
+@using EclipseWebAppClassLibrary.Data.Interfaces
+@using EclipsePageLibrary.CustomComponents.RadzenReusableGridViewOnly
+@using Radzen
+<p>Radzen display only</p>
+
+<RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                Data="@employees" TItem="Employee" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or" SelectionMode="DataGridSelectionMode.Single" @bind-Value="@selectedEmployees">
+    <Columns>
+        <RadzenDataGridColumn TItem="Employee" Property="EmployeeID" Filterable="false" Title="ID" Frozen="true" Width="80px" TextAlign="TextAlign.Center"/>
+        <RadzenDataGridColumn TItem="Employee" Property="FirstName" Title="First Name" Frozen="true" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="LastName" Title="Last Name" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Title" Title="Job Title" Width="200px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="TitleOfCourtesy" Title="Title" Width="120px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="BirthDate" Title="Birth Date" FormatString="{0:d}" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="HireDate" Title="Hire Date" FormatString="{0:d}" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Address" Title="Address" Width="200px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="City" Title="City" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Region" Title="Region" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="PostalCode" Title="Postal Code" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Country" Title="Country" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="HomePhone" Title="Home Phone" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Extension" Title="Extension" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Notes" Title="Notes" Width="300px"/>
+    </Columns>
+</RadzenDataGrid>
+
+
+<p>Reusable Radzen table display only</p>
+
+<RadzenReusableGridViewOnly TItem="Employee" Items="@employees">
+    <Columns>
+        <RadzenDataGridColumn TItem="Employee" Property="EmployeeID" Filterable="false" Title="ID" Frozen="true" Width="80px" TextAlign="TextAlign.Center"/>
+        <RadzenDataGridColumn TItem="Employee" Property="FirstName" Title="First Name" Frozen="true" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="LastName" Title="Last Name" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Title" Title="Job Title" Width="200px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="TitleOfCourtesy" Title="Title" Width="120px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="BirthDate" Title="Birth Date" FormatString="{0:d}" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="HireDate" Title="Hire Date" FormatString="{0:d}" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Address" Title="Address" Width="200px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="City" Title="City" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Region" Title="Region" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="PostalCode" Title="Postal Code" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="Country" Title="Country" Width="160px"/>
+        <RadzenDataGridColumn TItem="Employee" Property="HomePhone" Title="Home Phone" Width="160px"/>s
+        <RadzenDataGridColumn TItem="Employee" Property="Extension" Title="Extension" Width="160px"/>
+
+    </Columns>
+</RadzenReusableGridViewOnly>
+
+@code {
+    List<Employee> employees;
+    IList<Employee> selectedEmployees;
+
+    [Inject] IEmployeeData employeeData { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        employees = employeeData.GetEmployees().ToList();
+        selectedEmployees = new List<Employee> { employees.FirstOrDefault() };
+    }
+
+}

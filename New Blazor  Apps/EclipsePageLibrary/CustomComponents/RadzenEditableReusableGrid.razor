@@ -1,0 +1,172 @@
+﻿@using Radzen
+@using Microsoft.JSInterop
+@using EclipseWebApp.Data.Utilitys
+@typeparam TItem
+
+@inject IJSRuntime jSRuntime
+
+<RadzenDataGrid @ref="grid"
+                AllowPaging="@AllowPaging"
+                PageSize="@PageSize"
+                AllowSorting="@AllowSorting"
+                EditMode="@EditMode"
+                AllowGrouping="@AllowGrouping"
+                AllowColumnResize="@AllowColumnResize"
+                Data="@Items"
+                TItem="TItem"
+                RowSelect="@RowSelected"
+                 style=
+                "--rz-scrollbar-color:Darkgrey; --rz-grid-selected-background-color: #054281; "
+                >
+    <Columns>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="10px" class="mb-4 mt-2">
+            @*<RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle_outline" Text="@AddButtonText" Click="@AddRow" />*@
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Text="Export XLS" Icon="grid_on" Click="@ExportToExcel" />
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Text="Import Template" Icon="add_circle_outline" />
+        </RadzenStack>
+        @ChildContent
+        <RadzenDataGridColumn TItem="TItem" Context="item" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Frozen="true" FrozenPosition="FrozenColumnPosition.Right"  Width="50px">
+                <Template Context="item">
+
+                    @if (isNewRow && object.ReferenceEquals(item, Items.First()))
+                    {
+                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@(() => SaveRow(item))" aria-label="Save">
+                        </RadzenButton>
+                    }
+                    else
+                    {
+                        <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat" Size="ButtonSize.Medium" class="" Click="@(args => DeleteRow(item))">
+                        </RadzenButton>
+                    }
+                </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    [Parameter] public string GridName { get; set; }
+
+    [Parameter] public bool AllowPaging { get; set; } = true;
+
+    [Parameter] public int PageSize { get; set; } = 10;
+
+    [Parameter] public bool AllowSorting { get; set; } = true;
+
+    [Parameter] public DataGridEditMode EditMode { get; set; } = DataGridEditMode.Single;
+
+    [Parameter] public bool AllowGrouping { get; set; } = true;
+
+    [Parameter] public bool AllowColumnResize { get; set; } = true;
+
+    [Parameter] public List<TItem> Items { get; set; }
+
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    [Parameter] public string AddButtonText { get; set; }
+
+    [Parameter] public EventCallback<TItem> OnAddRow { get; set; }
+
+    RadzenDataGrid<TItem> grid;
+    TItem selectedRow;
+    bool isRowEditing = false;
+    bool isNewRow = false; // Add a flag to track if the current row is a new row
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await AddRowIfCurrentRowFilled();
+        }
+    }
+
+    async Task AddRowIfCurrentRowFilled()
+    {
+        // Check if there are any items in the list
+        if (Items != null && Items.Count > 0)
+        {
+            var lastItem = Items[Items.Count - 1];
+            // Check if the last item is fully filled
+            if (IsRowFullyFilled(lastItem))
+            {
+                await AddRow();
+            }
+        }
+        else // If there are no items, add a row
+        {
+            await AddRow();
+        }
+    }
+
+    bool IsRowFullyFilled(TItem item)
+    {
+        // Check if all properties of the item are filled
+        foreach (var property in typeof(TItem).GetProperties())
+        {
+            var value = property.GetValue(item);
+            if (value == null || (value is string str && string.IsNullOrWhiteSpace(str)))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    async Task AddRow()
+    {
+        var newItem = Activator.CreateInstance<TItem>();
+        Items.Insert(0, newItem);
+        if (OnAddRow.HasDelegate)
+        {
+            await OnAddRow.InvokeAsync(newItem);
+        }
+
+        selectedRow = newItem;
+        isRowEditing = true;
+        isNewRow = true; // Set isNewRow to true for the newly added row
+        grid.EditRow(newItem);
+        grid.Reload();
+    }
+
+    void RowSelected(TItem item)
+    {
+        selectedRow = item;
+        isRowEditing = true;
+        grid.EditRow(item); // Ensure the row is set to edit mode
+        grid.Reload(); // Refresh the grid to reflect the changes
+    }
+
+    async Task SaveRow(TItem item)
+    {
+        grid.UpdateRow(item);
+        grid.Reload();
+        await Task.Delay(100);
+        isRowEditing = false;
+        isNewRow = false; // Reset isNewRow to false after saving
+                          // Trigger AddRow after SaveRow only if isNewRow is false
+        if (!isNewRow)
+        {
+            await AddRowIfCurrentRowFilled();
+        }
+    }
+
+    async Task ExportToExcel()
+    {
+        if (Items != null && Items.Any())
+        {
+            var excelData = ExcelUtility.GenerateExcel(Items, "ExportedData"); // Assuming you have the correct method in ExcelUtility
+            await ExcelUtility.SaveAs(jSRuntime, "exportedData.xlsx", excelData);
+        }
+    }
+
+    void DeleteRow(TItem item)
+    {
+        Items.Remove(item);
+        grid.Reload();
+        isRowEditing = false;
+    }
+}

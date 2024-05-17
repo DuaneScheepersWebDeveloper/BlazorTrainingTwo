@@ -1,0 +1,43 @@
+﻿@* CustomAccordion.razor *@
+@namespace EclipsePageLibrary.CustomComponents.CustomEclipseAccordion
+
+
+<div class="accordion m-2" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="@PanelStayOpenHeading">
+            <button class="accordion-button d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#@PanelStayOpenCollapse" aria-expanded="false" aria-controls="@PanelStayOpenCollapse">
+                <div class="d-flex align-items-center">
+                    @AccordionHeader
+                </div>
+                <span class="custom-arrow" style="@ValidationCss"></span>
+            </button>
+        </h2>
+        <div id="@PanelStayOpenCollapse" class="accordion-collapse collapse @GetShowClass()" aria-labelledby="@PanelStayOpenHeading">
+            <div class="accordion-body">
+                @ChildContent
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string AccordionHeader { get; set; }
+
+    [Parameter] public string AccordionNumber { get; set; }
+
+    [Parameter] public bool ShowAccordion { get; set; }
+
+    [Parameter] public string ValidationCss { get; set; } // Parameter for validation styling
+
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    public string PanelStayOpenHeading => $"panelsStayOpen-heading{AccordionNumber}";
+
+    public string PanelStayOpenCollapse => $"panelsStayOpen-collapse{AccordionNumber}";
+
+    private string GetShowClass()
+    {
+        return ShowAccordion ? "show" : "";
+    }
+
+}
